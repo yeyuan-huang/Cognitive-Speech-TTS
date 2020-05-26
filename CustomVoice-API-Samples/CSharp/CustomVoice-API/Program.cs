@@ -27,7 +27,7 @@ namespace CustomVoice_API
             action = (Action)Enum.Parse(typeof(Action), ApiKindAndAction["action"]);
 
             var parameters = APIArguments.GetParameters(apikind, action);
-            if(parameters == null)
+            if (parameters == null)
             {
                 Console.WriteLine($"{apikind} does not support {action} operation");
                 ArgumentsDescription.PrintAPIKindUsage(apikind);
